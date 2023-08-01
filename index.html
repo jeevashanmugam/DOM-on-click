@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <button id="btn">Click </button>
+    <!-- <button>Cancel alert </button>
+    <button>Stop Timer </button> -->
+
+    <ul id="ul-list">
+
+
+
+    </ul>
+
+
+    <script>
+
+
+        let arr = ["item1", "item2", "item3", "item4"]
+        let ul = document.getElementById("ul-list");
+        let btn = document.getElementById("btn")
+
+        btn.addEventListener("click", myFunction);
+        
+        function myFunction(){
+            
+            arr.forEach (function(e){
+
+                let list =document.createElement("li")
+                list.innerHTML=e;
+                ul.appendChild(list)
+               
+            });
+           // console.log("Click Ok");
+        }
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>
